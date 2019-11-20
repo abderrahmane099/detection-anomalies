@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<title>Airline-delay-Prediction App</title>
+<body>
+
+<form action = "/getcause" method="POST">
+<p> Select duration:<input name="duration" type ="number" value="DU" /> </p>
+
+<p> Select Methode :   
+<select name="méthode">
+<option value="G">GET</option>
+<option value="P">POST</option>
+</select> </p>
+<p> Select Type :   
+<select name="type">
+<option value="RE">REST</option>
+<option value="SO">SOAP</option>
+</select> </p>
+<p> Select direction :   
+<select name="direction">
+<option value="ax">axway</option>
+<option value="ab">axway-BackEnd</option>
+</select> </p>
+<p> Select code error :   
+<select name="code_error">
+<option value="ISE">500 Internal Server Error</option>
+<option value="FO">403 Forbidden</option>
+<option value="SF">401 Security failure</option>
+<option value="UN">401 Unauthorized</option>
+<option value="BR">400 Bad Request</option>
+<option value="NMFR">403 No match found for request</option>
+<option value="MNA">405 Method Not Allowed</option>
+<option value="PF">412 Precondition Failed</option>
+</select> </p>
+ Select Mode_authApp_Axway :   
+<select name="Mode_authApp_Axway">
+<option value="ak">API Key</option>
+<option value="oa">Oauth</option>
+<option value="Nau">No authentication</option>
+<option value="PT">Pass Through</option>
+</select> </p>
+<p> Select Mode_authAxway_Backend :   
+<select name="Mode_authAxway_Backend">
+<option value="NO">No Authentication</option>
+<option value="AB">Authorization - Basic</option>
+</select> </p>
+<p> <input type ="submit" value="submit" /> </p>
+</form>
+</body>
+</html>
+<form name="">
+                  <!-- Heading -->
+                  
+
+                    <div class="md-form">
+                    <input type="text" id="form3" class="form-control">
+                    <label for="form3">Select duration</label>
+                    </div>
+				  
+                    <div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select Methode :</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+					  <option>GET</option>
+					  <option>POST</option>
+					</select>
+                    </div>
+					
+					<div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select Type :</label>
+					<select class="form-control" id="exampleFormControlSelect1">
+					  <option>REST</option>
+					  <option>SOAP</option>
+					</select>
+                    </div>
+					
+					<div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select direction :</label>
+					<select class="form-control" id="exampleFormControlSelect2">
+					  <option>axway</option>
+					  <option>axway-BackEnd</option>
+					</select>
+                    </div>
+					
+					<div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select code error : </label>
+					<select class="form-control" id="exampleFormControlSelect3">
+					  <option value="ISE">500 Internal Server Error</option>
+							<option value="FO">403 Forbidden</option>
+							<option value="SF">401 Security failure</option>
+							<option value="UN">401 Unauthorized</option>
+							<option value="BR">400 Bad Request</option>
+							<option value="NMFR">403 No match found for request</option>
+							<option value="MNA">405 Method Not Allowed</option>
+							<option value="PF">412 Precondition Failed</option>
+					</select>
+                    </div>
+					
+					<div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select Mode_authApp_Axway :</label>
+					<select class="form-control" id="exampleFormControlSelect4">
+					  <option value="ak">API Key</option>
+						<option value="oa">Oauth</option>
+						<option value="Nau">No authentication</option>
+						<option value="PT">Pass Through</option>
+					</select>
+                    </div>
+					
+					<div class="md-form">
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Select Mode_authAxway_Backend :</label>
+					<select class="form-control" id="exampleFormControlSelect5">
+					  <option value="NO">No Authentication</option>
+						<option value="AB">Authorization - Basic</option>
+					</select>
+                    </div>
+
+                  
+
+                  <div class="text-center">
+                    <button class="btn btn-indigo">Predict</button>
+                    <hr>
+                    <button class="btn btn-indigo">Reset Prediction</button>
+                  </div>
+
+                </form>
+                <!-- Form -->
